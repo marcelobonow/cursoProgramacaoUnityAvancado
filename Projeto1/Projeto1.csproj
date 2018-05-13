@@ -340,7 +340,8 @@
     <Compile Include="Assets\Scripts\Aula3\LERPDeltaTimeMovimentBehaviour.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\BallCollisionManager.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\BallKicker.cs" />
-    <Compile Include="Assets\Scripts\PinFootBall\GoalGameManager.cs" />
+    <Compile Include="Assets\Scripts\PinFootBall\GoalPostBehaviour.cs" />
+    <Compile Include="Assets\Scripts\PinFootBall\PinFootBallManager.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\SmoothFollow.cs" />
   </ItemGroup>
   <ItemGroup>
