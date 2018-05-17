@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PinFootBall/PinFootBall.unity
+- path: Assets/Scenes/Aula3/DeltaTime_Lerp.unity
   isLoaded: 1
   isActive: 1
