@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
 
 public class LERPDeltaTimeMovimentBehaviour : MonoBehaviour {
-    public Transform targePosition;
+    public Transform targetPosition;
     public float timeToComplete;
 
     protected Vector3 startPoistion;
@@ -20,6 +21,7 @@ public class LERPDeltaTimeMovimentBehaviour : MonoBehaviour {
 	void Update () {
         deltaTimeCounter += Time.deltaTime/ timeToComplete;
         Debug.Log(deltaTimeCounter);
-        GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targePosition.position, deltaTimeCounter));
-	}
+        GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targetPosition.position, deltaTimeCounter));
+
+    }
 }
