@@ -60,17 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Package\FullTiltBoogie\RotateFlareHolder.cs" />
-    <Compile Include="Assets\Package\Yurowm\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\Package\Yurowm\Demo\Scripts\CharacterPanel.cs" />
-    <Compile Include="Assets\Package\Yurowm\Demo\Scripts\CharacterViewer.cs" />
-    <Compile Include="Assets\Package\Yurowm\Demo\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Script\CannonMovementBehaviour.cs" />
-    <Compile Include="Assets\Script\CannonRayCastAllBehaviour.cs" />
-    <Compile Include="Assets\Script\CannonRayCastBehaviour.cs" />
-    <Compile Include="Assets\Script\MovimentByPointBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula5\CannonMovementBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula5\CannonRayCastAllBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula5\CannonRayCastBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula5\MovimentByScreenToRayBehaviour.cs" />
     <Compile Include="Assets\Script\PointAndClickMovementBehaviour.cs" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
-    <None Include="Assets\Package\Yurowm\Shaders\SkinShader.shader" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
