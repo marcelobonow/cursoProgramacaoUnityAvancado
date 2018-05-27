@@ -64,10 +64,18 @@
     <Compile Include="Assets\Script\Aula5\CannonRayCastAllBehaviour.cs" />
     <Compile Include="Assets\Script\Aula5\CannonRayCastBehaviour.cs" />
     <Compile Include="Assets\Script\Aula5\MovimentByScreenToRayBehaviour.cs" />
-    <Compile Include="Assets\Script\PointAndClickMovementBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula6\PointAndClickBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula6\ShootingBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula6\WalkToPointBehaviour.cs" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
+    <Reference Include="Cinemachine">
+      <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine.Editor">
+      <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

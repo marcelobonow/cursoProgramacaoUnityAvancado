@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\PinFootBall\BallCollisionManager.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\BallKicker.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\GoalPostBehaviour.cs" />
+    <Compile Include="Assets\Scripts\PinFootBall\metodo.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\PinFootBallManager.cs" />
     <Compile Include="Assets\Scripts\PinFootBall\SmoothFollow.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

@@ -31,6 +31,7 @@ public class MovimentByScreenToRayBehaviour : MonoBehaviour {
             deltaTimeCounter += Time.deltaTime / timeToComplete;
             Debug.Log(deltaTimeCounter);
             GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targetPosition, deltaTimeCounter));
+            //Se chegou ao objetivo zera os valores e informa que não esta mais caminhando
             if (deltaTimeCounter >= 1)
             {
                 deltaTimeCounter = 0;

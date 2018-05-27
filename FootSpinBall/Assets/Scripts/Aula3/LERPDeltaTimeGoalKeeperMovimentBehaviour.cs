@@ -22,8 +22,9 @@ public class LERPDeltaTimeGoalKeeperMovimentBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         deltaTimeCounter += Time.deltaTime/ timeToComplete;
-        GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targetPosition[Convert.ToInt32(indexTargetPositionList)].position, deltaTimeCounter));
-        if(deltaTimeCounter>=1)
+         GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targetPosition[Convert.ToInt32(indexTargetPositionList)].position, deltaTimeCounter));
+        Debug.Log("DElta Time " + deltaTimeCounter);
+        if (deltaTimeCounter>=1)
         {
             //inverte o bool par pergar o outro index
             indexTargetPositionList = !indexTargetPositionList;
