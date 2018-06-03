@@ -18,4 +18,9 @@ public class ShootingBehaviour : MonoBehaviour {
         else if((Input.GetButtonUp("Fire2")))
             characterAnimator.SetBool("Shoot", false);
     }
+
+    private void OnEnable()
+    {
+        
+    }
 }

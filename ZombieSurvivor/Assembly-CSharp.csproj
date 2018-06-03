@@ -67,6 +67,16 @@
     <Compile Include="Assets\Script\Aula6\PointAndClickBehaviour.cs" />
     <Compile Include="Assets\Script\Aula6\ShootingBehaviour.cs" />
     <Compile Include="Assets\Script\Aula6\WalkToPointBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\AI API\StateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\AI API\StateMachineManager.cs" />
+    <Compile Include="Assets\Script\Aula7\AttackStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\HUDManagerBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\NavigationMeshWalkToPointStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\PatrolStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\PointAndClickStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\ShootingStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\SoldierStateMachineManager.cs" />
+    <Compile Include="Assets\Script\Aula7\ZombieStateMachineManager.cs" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
     <Reference Include="Cinemachine">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

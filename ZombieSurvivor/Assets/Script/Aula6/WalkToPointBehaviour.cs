@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WalkToPointBehaviour : MonoBehaviour {
-    private Vector3 targetPosition;
+    protected Vector3 targetPosition;
     protected Vector3 startPoistion;
     protected float deltaTimeCounter;
     protected float timeToComplete;
@@ -17,7 +17,7 @@ public class WalkToPointBehaviour : MonoBehaviour {
         characterAnimator = GetComponent<Animator>();
     }
 
-    public void walkToPoint(Vector3 target)
+    public virtual void walkToPoint(Vector3 target)
     {
         if (!walkingTo)
         {
@@ -28,8 +28,9 @@ public class WalkToPointBehaviour : MonoBehaviour {
             //Calcula o tempo de duração do movimento tendo como base a distancia
             timeToComplete = Vector3.Distance(startPoistion, target) / 3;
             //Faz o personagem olhar para o ponto alvo
-            transform.LookAt(target);
+            //transform.LookAt(target);
             deltaTimeCounter = 0;
+            characterAnimator.SetBool("Walk", true);
         }
     }
 
@@ -46,6 +47,7 @@ public class WalkToPointBehaviour : MonoBehaviour {
             {
                 walkingTo = false;
                 speed = 0;
+                characterAnimator.SetBool("Walk", false);
             }
         }
 
