@@ -28,7 +28,7 @@ public class WalkToPointBehaviour : MonoBehaviour {
             //Calcula o tempo de duração do movimento tendo como base a distancia
             timeToComplete = Vector3.Distance(startPoistion, target) / 3;
             //Faz o personagem olhar para o ponto alvo
-            //transform.LookAt(target);
+            transform.LookAt(target);
             deltaTimeCounter = 0;
             characterAnimator.SetBool("Walk", true);
         }
