@@ -42,7 +42,7 @@ public class WalkToPointBehaviour : MonoBehaviour {
             Debug.Log(deltaTimeCounter);
             GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(startPoistion, targetPosition, deltaTimeCounter));
             //Se chegou ao objetivo zera os valores e informa que não esta mais caminhando
-            speed = 0.5f;
+            speed += deltaTimeCounter/3;
             if (deltaTimeCounter >= 1)
             {
                 walkingTo = false;

@@ -77,6 +77,7 @@
     <Compile Include="Assets\Script\Aula7\ShootingStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\SoldierStateMachineManager.cs" />
     <Compile Include="Assets\Script\Aula7\ZombieStateMachineManager.cs" />
+    <Compile Include="Assets\Teste.cs" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
     <Reference Include="Cinemachine">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
