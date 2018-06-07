@@ -28,7 +28,7 @@ public class AttackStateBehaviour : StateBehaviour {
 
     public override void onExit()
     {
-        throw new System.NotImplementedException();
+        //
     }
 
     // Use this for initialization
@@ -37,8 +37,5 @@ public class AttackStateBehaviour : StateBehaviour {
         navMeshAgent = GetComponent<NavMeshAgent>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

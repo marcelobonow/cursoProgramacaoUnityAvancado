@@ -14,12 +14,13 @@ public class NavigationMeshWalkToPointStateBehaviour : StateBehaviour
     protected NavMeshAgent navMeshAgent;
     protected bool isWalkingTo = false;
 
-    private void Start()
+    private void Awake()
     {
         //Note que é necessário popular esta variável já que não é possível chamar o Start da classe base
         characterAnimator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
-        layerMask =  1 << LayerMaskIndex;
+        layerMask = 1 << LayerMaskIndex;
+
     }
 
     protected void walkTo(Vector3 target)
