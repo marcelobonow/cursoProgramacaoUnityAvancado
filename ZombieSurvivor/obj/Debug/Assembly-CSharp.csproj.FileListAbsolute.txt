@@ -164,3 +164,5 @@ D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\A
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\Assembly-CSharp.dll
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\Assembly-CSharp.pdb
+D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\Temp\bin\Debug\NavMeshComponentsEditor.pdb
+D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\Temp\bin\Debug\NavMeshComponents.pdb

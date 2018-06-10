@@ -8,6 +8,7 @@ public class StateMachineManager : MonoBehaviour {
     protected StateBehaviour[] stateList;
 
     protected int _stateActiveIndex;
+    protected int stateLastIndex;
 
     public int StateActiveIndex
     {
@@ -29,9 +30,22 @@ public class StateMachineManager : MonoBehaviour {
     {
         stateList[_stateActiveIndex].onExit();
         stateList[_stateActiveIndex].enabled = false;
+        stateLastIndex = _stateActiveIndex;
         _stateActiveIndex = activeState;
         stateList[_stateActiveIndex].enabled = true;
         stateList[_stateActiveIndex].onEnter(this);
+    }
+
+    public StateBehaviour getState(int stateIndex)
+    {
+        return stateList[stateIndex];
+    }
+
+    protected void desableState(int stateIndex)
+    {
+        stateList[stateIndex].onExit();
+        stateList[stateIndex].enabled = false;
+        stateLastIndex = stateIndex;
     }
 
     public virtual void stateDone(StateBehaviour state)

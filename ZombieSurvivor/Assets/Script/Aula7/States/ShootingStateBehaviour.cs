@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class ShootingStateBehaviour : StateBehaviour
 {
+    /*Este atributo será populado através de injeção de dependencia. 
+    *É importante deixar o atributo oculto para o Inspector, pois o Unity não é capaz de mostrar atributos do tipo interface no editor
+    */
+    [HideInInspector]
+    public HitEventHandler hitHandler;
+
+    [SerializeField]
+    protected WeaponData weapon;
+
     [SerializeField]
     protected int LayerMaskIndex;
-    protected int layerMask;
 
+    protected int layerMask;
     private Animator characterAnimator;
-    [SerializeField]
-    private GameObject sparkPrefab;
- 
 
     private void Start()
     {
@@ -22,14 +28,15 @@ public class ShootingStateBehaviour : StateBehaviour
     public void shoot(Vector3 target)
     {
         characterAnimator.SetTrigger("Shoot");
-        //RaycastHit raycastHit;
-        //Ray ray = new Ray(transform.position, target - transform.position);
-        target.y = 1.6f;
-       // Physics.Raycast(ray,out raycastHit);
+        //Altera o Y do alvo para alinhar-se com a altura da arma
+        target.y = 1.2f;
+        //Força o personagem olhar para o local onde está atirando
         transform.LookAt(target);
-        GameObject spark = Instantiate(sparkPrefab);
-        spark.transform.position = target;
-        Destroy(spark, spark.GetComponent<ParticleSystem>().main.duration);
+        RaycastHit raycastHit;
+        Ray ray = new Ray(transform.position, transform.forward);
+ 
+        if (Physics.Raycast(ray, out raycastHit) )
+            hitHandler.OnAgentHited(weapon, raycastHit.collider.gameObject,raycastHit.point);
     }
     
     private void Update()
@@ -40,8 +47,7 @@ public class ShootingStateBehaviour : StateBehaviour
             RaycastHit rayHit;
 
             if (Physics.Raycast(rayFromCamera, out rayHit, 1000))
-                if(!rayHit.collider.CompareTag("Ground"))
-                    shoot(rayHit.point);
+                   shoot(rayHit.point);
         }
     }
 
