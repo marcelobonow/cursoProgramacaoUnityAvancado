@@ -21,37 +21,24 @@ public class CrateBehaviour : MonoBehaviour {
         StartCoroutine(script());
     }
 
-    protected Vector3 getNextPoint()
-    {
-        //Verifica se está no final da lista. Se está, reinicia o index
-        if (++wayPointIndex == wayPoints.Length)
-            wayPointIndex = 0;
-        return wayPoints[wayPointIndex].position;
-    }
-
     IEnumerator script()
     {
-        StartCoroutine(moveToPoint(getNextPoint()));
-        //StartCoroutine(jump());
-        //StartCoroutine(moveToPoint(getNextPoint()));
-
-        yield return null;
+        yield return StartCoroutine(moveToPoint(getNextPoint()));
+        yield return StartCoroutine(jump());
+        yield return StartCoroutine(moveToPoint(getNextPoint()));
     }
 
     IEnumerator moveToPoint(Vector3 targetPoint)
     {
-        Debug.Log("MoveToPoint " + Vector3.Distance(transform.position, targetPoint));
         Vector3 direction = Vector3.Normalize(wayPoints[wayPointIndex].position - transform.position);
 
         while (Vector3.Distance(transform.position, targetPoint) > 1)
         {
-            Debug.Log("MoveToPoint " + direction);
             rigidbody.AddForce(direction * speed);
             yield return new WaitForSeconds(2);
         }
 
         yield return null;
-        StartCoroutine(jump());
     }
 
     IEnumerator jump()
@@ -66,6 +53,13 @@ public class CrateBehaviour : MonoBehaviour {
         transform.localScale = Vector3.one;
         rigidbody.AddForce(Vector3.up * speed);
         yield return new WaitForSeconds(4);
-        StartCoroutine(moveToPoint(getNextPoint()));
+    }
+
+    protected Vector3 getNextPoint()
+    {
+        //Verifica se está no final da lista. Se está, reinicia o index
+        if (++wayPointIndex == wayPoints.Length)
+            wayPointIndex = 0;
+        return wayPoints[wayPointIndex].position;
     }
 }

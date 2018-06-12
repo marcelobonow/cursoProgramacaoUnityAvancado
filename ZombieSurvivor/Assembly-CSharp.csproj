@@ -90,11 +90,11 @@
     <Compile Include="Assets\Script\Aula8\CrateBehaviour.cs" />
     <Compile Include="Assets\Teste.cs" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Cinemachine">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine.Editor">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
