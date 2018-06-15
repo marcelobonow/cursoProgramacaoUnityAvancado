@@ -8,14 +8,16 @@ public class CoroutinesSampleBehaviour : MonoBehaviour
     void Start()
     {
         StartCoroutine(Routine());
-        Debug.Log("Chamou Coroutine");
+        Debug.Log("Linha pos Coroutine 1");
+        Debug.Log("Linha pos Coroutine 2");
+        Debug.Log("Linha pos Coroutine 3");
     }
     IEnumerator Routine()
     {
         Debug.Log("Iniciou Coroutine");
-        for (float i = 0; i > 5; i++)
+        for (int i = 0; i < 5; i++)
         {
-            Debug.Log("Frame da Coroutine");
+            Debug.Log("Frame da Coroutine " +i);
             yield return null;
         }
         Debug.Log("Terminou Coroutine");

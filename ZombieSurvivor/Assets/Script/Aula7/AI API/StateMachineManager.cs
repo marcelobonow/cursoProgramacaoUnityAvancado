@@ -8,7 +8,7 @@ public class StateMachineManager : MonoBehaviour {
     protected StateBehaviour[] stateList;
 
     protected int _stateActiveIndex;
-    protected int stateLastIndex;
+    private int stateLastIndex;
 
     public int StateActiveIndex
     {
@@ -18,6 +18,7 @@ public class StateMachineManager : MonoBehaviour {
         }
     }
 
+  
     protected virtual void Start()
     {
         //Percorre todas os estados atriundo a máquina a si

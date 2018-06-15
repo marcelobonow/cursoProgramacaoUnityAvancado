@@ -13,9 +13,9 @@ public class CoroutinesSampleWaitForSecondBehaviour : MonoBehaviour
     IEnumerator RoutineForSeconds()
     {
         Debug.Log("Iniciou Coroutine");
-        for (float i = 0; i > 5; i++)
+        for (float i = 0; i < 5; i++)
         {
-            Debug.Log("Frame da Coroutine de 2 seg");
+            Debug.Log("Frame da Coroutine de 2 seg " +i);
             yield return new WaitForSeconds(2);
         }
         Debug.Log("Terminou Coroutine");

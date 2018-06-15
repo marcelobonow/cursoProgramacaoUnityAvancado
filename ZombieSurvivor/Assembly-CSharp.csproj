@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\Aula6\WalkToPointBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\AI API\StateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\AI API\StateMachineManager.cs" />
+    <Compile Include="Assets\Script\Aula7\AI API\WalkToOnMeshStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\AgentData.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\HitEventHandler.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\WeaponData.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\Script\Aula7\States\PatrolStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\States\PointAndClickStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\States\ShootingStateBehaviour.cs" />
-    <Compile Include="Assets\Script\Aula7\States\WalkToOnMeshStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\ZombieSurvivorGameManager.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleWaitForSecondBehaviour.cs" />
