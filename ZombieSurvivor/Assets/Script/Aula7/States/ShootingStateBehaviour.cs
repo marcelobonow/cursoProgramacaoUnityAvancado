@@ -25,7 +25,7 @@ public class ShootingStateBehaviour : StateBehaviour
         layerMask = 1 << LayerMaskIndex;
     }
 
-    public void shoot(Vector3 target)
+    public virtual void shoot(Vector3 target)
     {
         characterAnimator.SetTrigger("Shoot");
         //Altera o Y do alvo para alinhar-se com a altura da arma
@@ -35,13 +35,13 @@ public class ShootingStateBehaviour : StateBehaviour
         RaycastHit raycastHit;
         Ray ray = new Ray(transform.position, transform.forward);
  
-        if (Physics.Raycast(ray, out raycastHit) )
+        if (Physics.Raycast(ray, out raycastHit) && --weapon.ammo >0)
             hitHandler.OnAgentHited(weapon, raycastHit.collider.gameObject,raycastHit.point);
     }
     
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Ray rayFromCamera = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit rayHit;

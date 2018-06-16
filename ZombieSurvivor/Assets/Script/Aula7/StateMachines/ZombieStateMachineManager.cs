@@ -24,12 +24,6 @@ public class ZombieStateMachineManager : StateMachineManager {
     [SerializeField]
     protected Color[] colorStateList;
 
-    protected override void Start()
-    {
-        base.Start();
-
-    }
-
     private void Update()
     {
         if (GetComponent<AgentData>().life <= 0)

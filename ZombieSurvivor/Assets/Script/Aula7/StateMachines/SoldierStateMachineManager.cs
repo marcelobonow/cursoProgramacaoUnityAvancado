@@ -8,19 +8,23 @@ public class SoldierStateMachineManager : StateMachineManager {
      */
     public static int NAVIGATION_MESH_WALK_STATE = 0;
     public static int SHOOT_STATE = 1;
+    public static int THROW_STATE = 2;
+    private int stateIndex=0;
 
-    protected override void Start()
+    protected int getNextStateIndex()
     {
-        base.Start();
+        //Verifica se está no final da lista. Se está, reinicia o index
+        if (++stateIndex == stateList.Length)
+            stateIndex = 0;
+        return stateIndex;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
-            setActiveState(0);
-        else if (Input.GetKey(KeyCode.W))
-            setActiveState(1);
+        //Avança para o próximo estado se a tecla Q for pressionada
+        if (Input.GetKeyDown(KeyCode.Q))
+            setActiveState(getNextStateIndex());
+      
     }
 
 }

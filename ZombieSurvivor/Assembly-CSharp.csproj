@@ -60,6 +60,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Package\FullTiltBoogie\RotateFlareHolder.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\Package\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Script\Aula5\CannonMovementBehaviour.cs" />
     <Compile Include="Assets\Script\Aula5\CannonRayCastAllBehaviour.cs" />
     <Compile Include="Assets\Script\Aula5\CannonRayCastBehaviour.cs" />
@@ -70,6 +84,7 @@
     <Compile Include="Assets\Script\Aula7\AI API\StateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\AI API\StateMachineManager.cs" />
     <Compile Include="Assets\Script\Aula7\AI API\WalkToOnMeshStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\ExplosiveBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\AgentData.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\HitEventHandler.cs" />
     <Compile Include="Assets\Script\Aula7\HitSystem\WeaponData.cs" />
@@ -84,12 +99,29 @@
     <Compile Include="Assets\Script\Aula7\States\PatrolStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\States\PointAndClickStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\States\ShootingStateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula7\States\ThrowStateBehaviour.cs" />
     <Compile Include="Assets\Script\Aula7\ZombieSurvivorGameManager.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleWaitForSecondBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CrateBehaviour.cs" />
     <Compile Include="Assets\Teste.cs" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\Package\FullTiltBoogie\Helpers\readme.txt" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\Package\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Package\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Package\JMO Assets\!JMO Assets Readme.txt" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+    <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <Reference Include="Cinemachine">
       <HintPath>D:/Izyversity/Repos/cursoProgramacaoAvancadoUnity2018/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>

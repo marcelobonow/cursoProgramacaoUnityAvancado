@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieSurvivor", "NavMeshCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieSurvivor", "NavMeshComponentsEditor.csproj", "{495FFDBD-91F1-98C4-35DD-D5D5299A6245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieSurvivor", "Assembly-CSharp-Editor.csproj", "{C6FEB8E5-E8BD-ACF6-51B6-4C0CD314DF07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{495FFDBD-91F1-98C4-35DD-D5D5299A6245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{495FFDBD-91F1-98C4-35DD-D5D5299A6245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{495FFDBD-91F1-98C4-35DD-D5D5299A6245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FEB8E5-E8BD-ACF6-51B6-4C0CD314DF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FEB8E5-E8BD-ACF6-51B6-4C0CD314DF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FEB8E5-E8BD-ACF6-51B6-4C0CD314DF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FEB8E5-E8BD-ACF6-51B6-4C0CD314DF07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

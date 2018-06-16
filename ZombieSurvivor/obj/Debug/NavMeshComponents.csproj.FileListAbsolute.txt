@@ -186,3 +186,4 @@ D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\N
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\NavMeshComponents.csproj.CopyComplete
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\NavMeshComponents.dll
 D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\obj\Debug\NavMeshComponents.pdb
+D:\Izyversity\Repos\cursoProgramacaoAvancadoUnity2018\ZombieSurvivor\Temp\bin\Debug\JMOAssets.dll

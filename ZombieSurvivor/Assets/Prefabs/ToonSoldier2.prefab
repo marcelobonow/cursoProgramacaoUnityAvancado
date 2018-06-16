@@ -67,10 +67,13 @@ GameObject:
   - component: {fileID: 4963961526917066}
   - component: {fileID: 95894228970867604}
   - component: {fileID: 54614092095677256}
-  - component: {fileID: 114056882060617100}
+  - component: {fileID: 195562467548254608}
   - component: {fileID: 114494415193286836}
+  - component: {fileID: 114056882060617100}
   - component: {fileID: 114971597016606924}
-  - component: {fileID: 195227844538187356}
+  - component: {fileID: 114833301742540418}
+  - component: {fileID: 114549513768260458}
+  - component: {fileID: 114228388467408492}
   m_Layer: 0
   m_Name: ToonSoldier2
   m_TagString: Untagged
@@ -792,7 +795,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1165161678984850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.02, y: -0.15, z: -5.93}
+  m_LocalPosition: {x: 6.02, y: -0.01, z: -5.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4430029249508300}
@@ -844,9 +847,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ed9426763293c47b28745d17c816f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 114549513768260458}
   LayerMaskIndex: 9
-  sparkPrefab: {fileID: 1325963772890730, guid: bad4a586d8c2b4fc1adb20c80b9b13a1,
-    type: 2}
+--- !u!114 &114228388467408492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165161678984850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a2fdfb18121ad4c99641bf464c43f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 100
 --- !u!114 &114494415193286836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -861,6 +875,39 @@ MonoBehaviour:
   stateList:
   - {fileID: 114971597016606924}
   - {fileID: 114056882060617100}
+  - {fileID: 114833301742540418}
+--- !u!114 &114549513768260458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165161678984850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578dad45407b5ec409d37372c6949142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: Machine Gun
+  radius: 5
+  damage: 5
+  ammo: 200
+  particle: {fileID: 1325963772890730, guid: bad4a586d8c2b4fc1adb20c80b9b13a1, type: 2}
+--- !u!114 &114833301742540418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165161678984850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 190f39d24cf2d1b418f4eac966b87a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  LayerMaskIndex: 0
+  projectilePrefab: {fileID: 1419596233124992, guid: 9af34c230d8dac046b120babb0d554d6,
+    type: 2}
+  throwForce: 200
 --- !u!114 &114971597016606924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -940,7 +987,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.07931131, y: 0.025312245, z: -0.6158655}
     m_Extent: {x: 1.3027155, y: 0.47713584, z: 2.0333588}
   m_DirtyAABB: 0
---- !u!195 &195227844538187356
+--- !u!195 &195562467548254608
 NavMeshAgent:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -953,7 +1000,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
