@@ -60,15 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Package\FullTiltBoogie\RotateFlareHolder.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\Package\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
     <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
@@ -104,6 +95,7 @@
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleWaitForSecondBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CrateBehaviour.cs" />
+    <Compile Include="Assets\Script\Aula9\GameDataManager.cs" />
     <Compile Include="Assets\Teste.cs" />
     <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\Package\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
