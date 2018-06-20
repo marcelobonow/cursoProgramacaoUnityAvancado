@@ -19,6 +19,7 @@ public class CrateBehaviour : MonoBehaviour {
     void Start () {
         rigidbody = GetComponent<Rigidbody>();
         StartCoroutine(script());
+        //nada
     }
 
     IEnumerator script()
@@ -26,11 +27,12 @@ public class CrateBehaviour : MonoBehaviour {
         yield return StartCoroutine(moveToPoint(getNextPoint()));
         yield return StartCoroutine(jump());
         yield return StartCoroutine(moveToPoint(getNextPoint()));
+        yield return StartCoroutine(jump());
     }
 
     IEnumerator moveToPoint(Vector3 targetPoint)
     {
-        Vector3 direction = Vector3.Normalize(wayPoints[wayPointIndex].position - transform.position);
+        Vector3 direction = Vector3.Normalize(targetPoint - transform.position);
 
         while (Vector3.Distance(transform.position, targetPoint) > 1)
         {

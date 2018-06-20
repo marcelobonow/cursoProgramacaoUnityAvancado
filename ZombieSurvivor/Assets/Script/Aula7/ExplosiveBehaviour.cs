@@ -13,7 +13,7 @@ public class ExplosiveBehaviour : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Invoke("Explode", 3);
+        Invoke("Explode", timeToExplode);
 	}
 	
 	// Update is called once per frame

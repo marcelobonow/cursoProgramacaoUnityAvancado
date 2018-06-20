@@ -34,9 +34,9 @@ public class ShootingStateBehaviour : StateBehaviour
         transform.LookAt(target);
         RaycastHit raycastHit;
         Ray ray = new Ray(transform.position, transform.forward);
- 
-        if (Physics.Raycast(ray, out raycastHit) && --weapon.ammo >0)
-            hitHandler.OnAgentHited(weapon, raycastHit.collider.gameObject,raycastHit.point);
+        if(weapon.ammo-- > 0)
+            if (Physics.Raycast(ray, out raycastHit))
+                hitHandler.OnAgentHited(weapon, raycastHit.collider.gameObject,raycastHit.point);
     }
     
     private void Update()
