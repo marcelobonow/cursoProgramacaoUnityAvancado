@@ -4,9 +4,10 @@ using System.IO;
 using UnityEngine;
 
 
-public class GameDataManager : MonoBehaviour
+public class QuizGameDataManager : MonoBehaviour
 {
-    private GameData loadedGameData;
+    private QuestionList loadedGameData;
+
     [SerializeField]
     protected string gameDataFileName;
 
@@ -27,21 +28,30 @@ public class GameDataManager : MonoBehaviour
             string dataAsJson = File.ReadAllText(filePath);
             //Através da API JsonUtility Serializa o conteúdo String em um objeto do tipo GameData. 
             //Aqui, claramente, as estrutura precisam ser compatíveis
-            loadedGameData = JsonUtility.FromJson<GameData>(dataAsJson);
-            Debug.Log(loadedGameData.playerName);
-            for (int i = 0; i < loadedGameData.ammo.Length; i++)
-                Debug.Log(loadedGameData.ammo[i]);
-        }
-        else
-             Debug.LogError("Cannot load game data!");
+            loadedGameData = JsonUtility.FromJson<QuestionList>(dataAsJson);
+            for (int i = 0; i < loadedGameData.questions.Length; i++)
+            {
+                Debug.Log("Description " + loadedGameData.questions[i].description);
+                for (int j = 0; j < loadedGameData.questions[i].answers.Length; j++)
+                    Debug.Log("Answers " + loadedGameData.questions[i].answers[j]);
+
+            }
+        }else
+            Debug.LogError("Cannot load game data!");
     }
 
     [System.Serializable]
-    public class GameData
+    public class QuestionList
     {
-        public int level;
-        public float timeElapsed;
-        public string playerName;
-        public int[] ammo;
+        public QuizGameData[] questions;
+    }
+
+    [System.Serializable]
+    public class QuizGameData
+    {
+        public string description;
+        public string[] answers;
+        public int correct;
+        public string image;
     }
 }
