@@ -4684,6 +4684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57c8c245b0e2d54cb1873c7a4809e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameDataFileName: GameData.json
 --- !u!4 &1492405758
 Transform:
   m_ObjectHideFlags: 0
@@ -5877,6 +5878,22 @@ Prefab:
       propertyPath: throwForce
       value: 600
       objectReference: {fileID: 0}
+    - target: {fileID: 114549513768260458, guid: b6389f02b94a780488e0f6a37c8ab191,
+        type: 2}
+      propertyPath: weaponName
+      value: nachine Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833301742540418, guid: b6389f02b94a780488e0f6a37c8ab191,
+        type: 2}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114056882060617100, guid: b6389f02b94a780488e0f6a37c8ab191,
+        type: 2}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 7dbfd8151d6cee64e940ec6fb5b33138,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6389f02b94a780488e0f6a37c8ab191, type: 2}
   m_IsPrefabParent: 0

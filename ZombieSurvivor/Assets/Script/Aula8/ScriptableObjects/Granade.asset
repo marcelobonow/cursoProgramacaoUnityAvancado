@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fc823382f4c31a4884d8bf95dacdec1, type: 3}
-  m_Name: Rifle
+  m_Name: Granade
   m_EditorClassIdentifier: 
-  weaponName: Rifle
+  weaponName: Granade
   radius: 5
-  damage: 5
-  ammo: 164
-  particle: {fileID: 1325963772890730, guid: bad4a586d8c2b4fc1adb20c80b9b13a1, type: 2}
+  damage: 200
+  ammo: 1
+  particle: {fileID: 100008, guid: 1ae4db7b36e51124b89d2b32303a7a0b, type: 2}

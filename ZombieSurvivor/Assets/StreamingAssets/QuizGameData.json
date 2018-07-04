@@ -1,17 +1,25 @@
 ﻿{
 "questions":[
 	{"description":"Enunciado da primeira questão",
-		"answers":["Respota A","Respota A","Respota A","Respota A"],
+		"answers":["Respota A",
+		"Respota A",
+		"Respota A",
+		"Respota A"],
 		"correct":2,
 		"image":"image.jpg"
 	},
 	{"description":"Enunciado da segunda questão",
-		"answers":["Respota A","Respota A","Respota A","Respota A"],
+		"answers":["Respota A",
+		"Respota A","Respota A",
+		"Respota A"],
 		"correct":2,
 		"image":"image.jpg"
 	},
 	{"description":"Enunciado da terceira questão",
-		"answers":["Respota A","Respota A","Respota A","Respota A"],
+		"answers":["Respota A",
+		"Respota A",
+		"Respota A",
+		"Respota A"],
 		"correct":2,
 		"image":"image.jpg"
 	}]

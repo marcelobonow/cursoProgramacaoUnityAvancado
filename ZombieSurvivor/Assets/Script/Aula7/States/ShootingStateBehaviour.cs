@@ -11,7 +11,9 @@ public class ShootingStateBehaviour : StateBehaviour
     public HitEventHandler hitHandler;
 
     [SerializeField]
-    protected WeaponData weapon;
+    protected WeaponScript weapon;
+
+    protected WeaponDataObject weaponData;
 
     [SerializeField]
     protected int LayerMaskIndex;
@@ -23,6 +25,9 @@ public class ShootingStateBehaviour : StateBehaviour
     {
         characterAnimator = GetComponent<Animator>();
         layerMask = 1 << LayerMaskIndex;
+        weaponData = new WeaponDataObject(weapon);
+        //weapon = ScriptableObject.Instantiate<WeaponScript>(weapon);
+
     }
 
     public virtual void shoot(Vector3 target)
@@ -36,7 +41,7 @@ public class ShootingStateBehaviour : StateBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         if(weapon.ammo-- > 0)
             if (Physics.Raycast(ray, out raycastHit))
-                hitHandler.OnAgentHited(weapon, raycastHit.collider.gameObject,raycastHit.point);
+                hitHandler.OnAgentHited(weaponData, raycastHit.collider.gameObject,raycastHit.point);
     }
     
     private void Update()

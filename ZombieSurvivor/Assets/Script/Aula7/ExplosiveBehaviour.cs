@@ -7,7 +7,7 @@ public class ExplosiveBehaviour : MonoBehaviour {
     [HideInInspector]
     public HitEventHandler hitHandler;
     [SerializeField]
-    protected WeaponData weapon;
+    protected WeaponScript weapon;
     [SerializeField]
     protected float timeToExplode=3;
 
@@ -19,9 +19,9 @@ public class ExplosiveBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	public void Explode () {
         Collider[] hitObjects = Physics.OverlapSphere(transform.position, weapon.radius);
-
+        
         for (int i = 0; i < hitObjects.Length; i++)
-            hitHandler.OnAgentHited(weapon, hitObjects[i].gameObject, transform.position);
+            hitHandler.OnAgentHited(new WeaponDataObject(weapon), hitObjects[i].gameObject, transform.position);
 
         GameObject explosion = Instantiate(weapon.particle);
         explosion.transform.position = transform.position;

@@ -26,7 +26,7 @@ public class ZombieSurvivorGameManager : MonoBehaviour, HitEventHandler
         (playerStateMachine.getState(SoldierStateMachineManager.THROW_STATE) as ShootingStateBehaviour).hitHandler = this;
     }
 
-    public void OnAgentHited(WeaponData weapon, GameObject agentHited, Vector3 hitPoint)
+    public void OnAgentHited(WeaponDataObject weapon, GameObject agentHited, Vector3 hitPoint)
     {
         // O teste de munição não deve ser mais feito aqui no Manager, pois cada arma possui sua especificidade
 

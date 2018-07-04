@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf98043460af49c468a00c648a69ac55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 114219327880281166}
+  weapon: {fileID: 11400000, guid: c3d0c01d8f325ea4e8a94cfce702cb7c, type: 2}
   timeToExplode: 3
 --- !u!135 &135635159198571016
 SphereCollider:
