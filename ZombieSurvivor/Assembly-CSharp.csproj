@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Loading\LoadSceneController.cs" />
     <Compile Include="Assets\Package\FullTiltBoogie\RotateFlareHolder.cs" />
     <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Package\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
@@ -97,12 +98,12 @@
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CoroutinesSampleWaitForSecondBehaviour.cs" />
     <Compile Include="Assets\Script\Aula8\CrateBehaviour.cs" />
-    <Compile Include="Assets\Script\Aula8\LoadSceneController.cs" />
     <Compile Include="Assets\Script\Aula8\ScriptableObjects\WeaponDataObject.cs" />
     <Compile Include="Assets\Script\Aula8\ScriptableObjects\WeaponScript.cs" />
     <Compile Include="Assets\Script\Aula9\GameDataManager.cs" />
     <Compile Include="Assets\Script\Aula9\QuizGameDataManager.cs" />
     <Compile Include="Assets\Scripts\BoxController.cs" />
+    <Compile Include="Assets\Teste.cs" />
     <None Include="Assets\PostProcessing\Shaders\Builtins\FinalPass.shader" />
     <None Include="Assets\PostProcessing\Shaders\Debug\Waveform.compute" />
     <None Include="Assets\PostProcessing\Shaders\Builtins\Uber.shader" />
@@ -181,22 +182,22 @@
     <None Include="Assets\PostProcessing\Shaders\Debug\Histogram.shader" />
     <None Include="Assets\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
     <Reference Include="Cinemachine">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

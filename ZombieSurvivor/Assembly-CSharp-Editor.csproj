@@ -67,22 +67,22 @@
     <None Include="Assets\PostProcessing\Shaders\Editor\ConvertToLog.shader" />
     <None Include="Assets\PostProcessing\Shaders\Editor\CurveGrid.shader" />
     <Reference Include="Cinemachine">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine.Editor">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Cinemachine.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Projetos/cursoProgramacaoUnityAvancado-master/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Projetos/Izyversity/ZombieSurvivor/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
