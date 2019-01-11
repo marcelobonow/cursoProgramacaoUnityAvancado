@@ -40,25 +40,25 @@ public class ShootingStateBehaviour : StateBehaviour
         RaycastHit raycastHit;
         Ray ray = new Ray(transform.position, transform.forward);
         if(weapon.ammo-- > 0)
-            if (Physics.Raycast(ray, out raycastHit))
-                hitHandler.OnAgentHited(weaponData, raycastHit.collider.gameObject,raycastHit.point);
+            if(Physics.Raycast(ray, out raycastHit))
+                hitHandler.OnAgentHited(weaponData, raycastHit.collider.gameObject, raycastHit.point);
     }
-    
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             Ray rayFromCamera = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit rayHit;
 
-            if (Physics.Raycast(rayFromCamera, out rayHit, 1000))
-                   shoot(rayHit.point);
+            if(Physics.Raycast(rayFromCamera, out rayHit, 1000))
+                shoot(rayHit.point);
         }
     }
 
     public override void onExit()
     {
-       //Do nothing on Exit
+        //Do nothing on Exit
     }
 
     public override void onEnter(StateMachineManager stateMachine)

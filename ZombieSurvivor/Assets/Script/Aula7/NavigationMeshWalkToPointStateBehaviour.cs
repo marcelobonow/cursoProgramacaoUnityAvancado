@@ -12,7 +12,6 @@ public class NavigationMeshWalkToPointStateBehaviour : StateBehaviour
 
     protected Animator characterAnimator;
     protected NavMeshAgent navMeshAgent;
-    protected bool isWalkingTo = false;
 
     private void Awake()
     {
@@ -27,22 +26,20 @@ public class NavigationMeshWalkToPointStateBehaviour : StateBehaviour
     {
         navMeshAgent.SetDestination(target);
         navMeshAgent.isStopped = false;
-        isWalkingTo = true;
     }
 
     private void Update()
     {
         /*Perceba que este estado por si só poderia dividir em 2. Um que capta o click do mouse e outro que move-se até o local.
         Aqui poderia utilizar-se do conceito de máquinas de estado compostas. Porém, a complexidade fica muito elevada para o primeiro exemplo desta técnica.*/
-        if (Input.GetMouseButtonDown(0) && !isWalkingTo)
+        if(Input.GetMouseButtonDown(0))
         {
             Ray rayFromCamera = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit rayHit;
 
-            if (Physics.Raycast(rayFromCamera, out rayHit, 1000, layerMask))
+            if(Physics.Raycast(rayFromCamera, out rayHit, 1000, layerMask))
                 walkTo(rayHit.point);
-        }else if (isWalkingTo && navMeshAgent.remainingDistance < 1)
-            isWalkingTo = false;
+        }
 
         //Sincroniza o atributo com a variável do Animator
         characterAnimator.SetFloat("Speed", navMeshAgent.velocity.magnitude);
@@ -52,7 +49,6 @@ public class NavigationMeshWalkToPointStateBehaviour : StateBehaviour
     {
         navMeshAgent.isStopped = true;
         characterAnimator.SetFloat("Speed", 0);
-        isWalkingTo = false;
     }
 
     public override void onEnter(StateMachineManager stateMachine)
